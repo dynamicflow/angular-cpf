@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../../cpf-validate.directive.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body ng-app="sample01">
+
+    <h1>Using ng-message</h1>
+    <form name="sample01Form">
+        <input type="text" name="cpf" ng-model="cpf" cpf required>
+        <div ng-messages="sample01Form.cpf.$error" role="alert">
+            <div ng-message="cpf" class="error">CPF Invalid</div>
+            <div ng-message="required" class="error">CPF Required</div>
+        </div>
+
+        <hr>
+        <input type="submit" value="submit"></input>
+    </form>
+
+</body>
+</html>

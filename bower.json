@@ -1,0 +1,27 @@
+{
+  "name": "angular-cpf",
+  "authors": [
+    "Alessandro Oliveira <alessandro@dynamicflow.com.br>"
+  ],
+  "description": "Brazilian CPF validation",
+  "main": "cpf-validate.directive.js",
+  "keywords": [
+    "cpf",
+    "angular",
+    "validação",
+    "validator"
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-messages": "^1.6.4",
+    "angular-ui-mask": "^1.8.7"
+  }
+}
